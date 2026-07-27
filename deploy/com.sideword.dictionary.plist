@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+	<string>com.sideword.dictionary</string>
+
+	<key>ProgramArguments</key>
+	<array>
+		<string>/Users/gogo/project/sideword-dictionary/bin/daily.sh</string>
+	</array>
+
+	<!-- 04:17, because every job that asks for "4am" fires at 4:00. -->
+	<key>StartCalendarInterval</key>
+	<dict>
+		<key>Hour</key>
+		<integer>4</integer>
+		<key>Minute</key>
+		<integer>17</integer>
+	</dict>
+
+	<key>WorkingDirectory</key>
+	<string>/Users/gogo/project/sideword-dictionary</string>
+
+	<key>StandardOutPath</key>
+	<string>/Users/gogo/project/sideword-dictionary/daily.log</string>
+	<key>StandardErrorPath</key>
+	<string>/Users/gogo/project/sideword-dictionary/daily.log</string>
+
+	<key>RunAtLoad</key>
+	<false/>
+</dict>
+</plist>

@@ -69,6 +69,25 @@ node bin/publish.mjs    # validate, merge, and clear the queue
 a Chinese field with no Chinese in it, and any change that would drop a record
 already published.
 
+## The daily schedule
+
+`bin/daily.sh` pulls, checks whether anything is queued, and starts the agent
+only if something is — an agent woken with nothing to do is an agent looking for
+something to do. Everything it is allowed to run is listed in
+`.claude/settings.json`, so a string in the queue cannot talk it into anything
+else.
+
+Install it on the machine that keeps the dictionary:
+
+```sh
+cp deploy/com.sideword.dictionary.plist ~/Library/LaunchAgents/
+launchctl load ~/Library/LaunchAgents/com.sideword.dictionary.plist
+launchctl list | grep sideword          # confirm it is registered
+```
+
+It runs at 04:17 and logs to `daily.log`, which is gitignored. To take it off
+again: `launchctl unload ~/Library/LaunchAgents/com.sideword.dictionary.plist`.
+
 ## Contributing a word
 
 Not yet. The endpoint that accepts words is the next piece of work; for now the
