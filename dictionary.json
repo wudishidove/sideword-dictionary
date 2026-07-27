@@ -1,0 +1,129 @@
+{
+  "version": 1,
+  "updatedAt": 1785169678833,
+  "aliases": {
+    "strove": [
+      "strive"
+    ],
+    "striven": [
+      "strive"
+    ],
+    "strive": [
+      "strive"
+    ],
+    "yeet": [
+      "yeet"
+    ],
+    "rizz": [
+      "rizz"
+    ],
+    "doomscrolling": [
+      "doomscrolling"
+    ],
+    "enshittification": [
+      "enshittification"
+    ]
+  },
+  "records": {
+    "strive": {
+      "headword": "strive",
+      "ipa": "/straɪv/",
+      "gloss": "力求",
+      "source": "llm",
+      "senses": [
+        {
+          "partOfSpeech": "verb",
+          "english": "To make great and persistent effort towards a goal.",
+          "chinese": "為了達成某個目標而持續地、費力地努力。"
+        },
+        {
+          "partOfSpeech": "verb",
+          "english": "To struggle against someone or something; to contend.",
+          "chinese": "與人或環境對抗、較勁。"
+        }
+      ],
+      "example": {
+        "english": "She strove to finish the report before midnight.",
+        "chinese": "她拚了命想在午夜前把報告趕完。"
+      }
+    },
+    "yeet": {
+      "headword": "yeet",
+      "ipa": "/jiːt/",
+      "gloss": "用力扔",
+      "source": "llm",
+      "senses": [
+        {
+          "partOfSpeech": "verb",
+          "english": "To throw something with force and without concern for where it lands.",
+          "chinese": "使勁把東西扔出去，也不管它落到哪裡。"
+        },
+        {
+          "partOfSpeech": "interjection",
+          "english": "An exclamation of excitement, approval or triumph.",
+          "chinese": "興奮、得意或叫好時喊的一聲。"
+        }
+      ],
+      "example": {
+        "english": "He yeeted his backpack onto the sofa and collapsed.",
+        "chinese": "他把背包往沙發上一扔，整個人癱了下去。"
+      }
+    },
+    "rizz": {
+      "headword": "rizz",
+      "ipa": "/ɹɪz/",
+      "gloss": "撩人的本事",
+      "source": "llm",
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "english": "Charm or skill in attracting a romantic partner.",
+          "chinese": "吸引對象的魅力或手腕。"
+        },
+        {
+          "partOfSpeech": "verb",
+          "english": "To attract or charm someone romantically.",
+          "chinese": "把某人撩到手。"
+        }
+      ],
+      "example": {
+        "english": "He has no rizz at all, but he keeps trying.",
+        "chinese": "他完全不會撩，但還是一直試。"
+      }
+    },
+    "doomscrolling": {
+      "headword": "doomscrolling",
+      "ipa": "/ˈduːmˌskɹəʊlɪŋ/",
+      "gloss": "沉溺於滑壞消息",
+      "source": "llm",
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "english": "The act of continuing to scroll through bad news online even though it makes you feel worse.",
+          "chinese": "明知看了只會更難受，還是一直往下滑壞消息的行為。"
+        }
+      ],
+      "example": {
+        "english": "I lost two hours to doomscrolling before bed.",
+        "chinese": "我睡前滑壞消息，兩個小時就這樣沒了。"
+      }
+    },
+    "enshittification": {
+      "headword": "enshittification",
+      "ipa": "/ɪnˌʃɪtɪfɪˈkeɪʃən/",
+      "gloss": "平台劣化",
+      "source": "llm",
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "english": "The gradual decline of an online platform, as it squeezes value first out of its users and then out of the businesses that depend on it.",
+          "chinese": "網路平台逐步變爛的過程：先從使用者身上榨取價值，再回頭榨依賴它的商家。"
+        }
+      ],
+      "example": {
+        "english": "Every social network seems to follow the same path of enshittification.",
+        "chinese": "每個社群網站好像都走上同一條劣化的路。"
+      }
+    }
+  }
+}
