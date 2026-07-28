@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": 1785210377042,
+  "updatedAt": 1785269873102,
   "aliases": {
     "strove": [
       "strive"
@@ -25,6 +25,18 @@
     ],
     "brainrot": [
       "brainrot"
+    ],
+    "thoughtful": [
+      "thoughtful"
+    ],
+    "cybersecurity": [
+      "cybersecurity"
+    ],
+    "documentation": [
+      "documentation"
+    ],
+    "keeping": [
+      "keeping"
     ]
   },
   "records": {
@@ -148,6 +160,103 @@
       "example": {
         "english": "Three hours of brainrot later, he could not name a single thing he had watched.",
         "chinese": "滑了三個小時的廢片，他連自己看過什麼都說不出來。"
+      }
+    },
+    "thoughtful": {
+      "headword": "thoughtful",
+      "ipa": "/ˈθɔːtfəl/",
+      "gloss": "體貼的；深思熟慮的",
+      "source": "dictionary",
+      "senses": [
+        {
+          "partOfSpeech": "adjective",
+          "english": "Demonstrating thought or careful consideration.",
+          "chinese": "展現出思考或審慎考量的。"
+        },
+        {
+          "partOfSpeech": "adjective",
+          "english": "Demonstrating kindness or consideration for others.",
+          "chinese": "展現出對他人的善意或體貼的。"
+        }
+      ],
+      "example": {
+        "english": "Preparing dinner is a thoughtful gesture for a new mother.",
+        "chinese": "為剛當媽媽的人準備晚餐，是一個體貼的舉動。"
+      }
+    },
+    "cybersecurity": {
+      "headword": "cybersecurity",
+      "ipa": "/saɪbəsɪˈkjʊəɹɪtɪ/",
+      "gloss": "網路安全",
+      "source": "dictionary",
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "english": "Security against electronic attacks such as cyberwarfare.",
+          "chinese": "防範網路戰等電子攻擊的安全措施。"
+        }
+      ],
+      "example": null
+    },
+    "documentation": {
+      "headword": "documentation",
+      "ipa": "/ˌdɒkjʊmənˈteɪʃən/",
+      "gloss": "文件；說明文件",
+      "source": "dictionary",
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "english": "Something transposed from a thought to a document; the written account of an idea.",
+          "chinese": "將想法轉化為文件的內容；以文字記錄下來的構想。"
+        },
+        {
+          "partOfSpeech": "noun",
+          "english": "Documentary evidence and sources.",
+          "chinese": "書面證據與資料來源。"
+        },
+        {
+          "partOfSpeech": "noun",
+          "english": "Documents that explain the operation of a particular machine or software program.",
+          "chinese": "說明特定機器或軟體程式如何操作的文件。"
+        },
+        {
+          "partOfSpeech": "noun",
+          "english": "Comments that explain the usage of individual functions, libraries and blocks of code.",
+          "chinese": "說明個別函式、程式庫及程式碼區塊用法的註解。"
+        }
+      ],
+      "example": null
+    },
+    "keeping": {
+      "headword": "keeping",
+      "ipa": "/ˈkiːpɪŋ/",
+      "gloss": "保持；保管；協調",
+      "source": "dictionary",
+      "senses": [
+        {
+          "partOfSpeech": "verb",
+          "english": "To continue in (a course or mode of action); not to intermit or fall from; to uphold or maintain.",
+          "chinese": "持續採取某種做法或行動方式；不中斷或偏離；維持下去。"
+        },
+        {
+          "partOfSpeech": "verb",
+          "english": "To wait for, keep watch for.",
+          "chinese": "等候或守候。"
+        },
+        {
+          "partOfSpeech": "noun",
+          "english": "Conformity or harmony.",
+          "chinese": "一致或協調。"
+        },
+        {
+          "partOfSpeech": "noun",
+          "english": "Charge or care.",
+          "chinese": "保管或照料。"
+        }
+      ],
+      "example": {
+        "english": "The foreground of this painting is not in keeping.",
+        "chinese": "這幅畫的前景不協調。"
       }
     }
   }
