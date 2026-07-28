@@ -15,6 +15,10 @@ stamp() { printf '%s %s\n' "$(date '+%Y-%m-%d %H:%M:%S')" "$*"; }
 
 git pull --ff-only --quiet || stamp "could not pull; working from the local copy"
 
+# Before counting, not after: what the collector took overnight is exactly the
+# work this run exists to do, and it is not in queue.json until this moves it.
+stamp "draining: $(node bin/drain.mjs)"
+
 waiting=$(node -e 'process.stdout.write(String(JSON.parse(require("fs").readFileSync("queue.json","utf8")).words.length))')
 if [ "$waiting" = "0" ]; then
   stamp "nothing queued"

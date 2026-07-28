@@ -60,6 +60,7 @@ written and what it said.
 See [AGENT.md](./AGENT.md), which is what the daily run follows.
 
 ```
+node bin/drain.mjs      # fold what the collector took into queue.json
 node bin/probe.mjs      # ask the public dictionary about everything queued
                         # write answers.json
 node bin/publish.mjs    # validate, merge, and clear the queue
@@ -90,5 +91,29 @@ again: `launchctl unload ~/Library/LaunchAgents/com.sideword.dictionary.plist`.
 
 ## Contributing a word
 
-Not yet. The endpoint that accepts words is the next piece of work; for now the
-queue is filled by hand.
+Sideword can send the words it could not define here, once you turn that on in
+its options. It is off until you do, and what it sends is the word and nothing
+else — not the page, not the sentence, not your learning history. See ADR-0008 in
+the extension's repository.
+
+The endpoint is `POST /sideword/words` with `{"words": ["strove", "rizz"]}`. It
+answers with the words it took, which is not always all of them: 250 words per
+address per day, counted against what was sent rather than what was valid, so
+nonsense costs its sender the same as a word. A word must be a single token of
+letters, hyphen and apostrophe, at most 40 characters — the shape a browser
+selection produces. Anything else is dropped without comment.
+
+```sh
+cp deploy/com.sideword.collector.plist ~/Library/LaunchAgents/
+launchctl load ~/Library/LaunchAgents/com.sideword.collector.plist
+curl -s https://gogoswifi2.asuscomm.com/sideword/health     # {"ok":true}
+```
+
+It listens on `127.0.0.1:5510` and is reached through the Caddy already running
+on that machine, which routes `/sideword/*` here and everything else where it
+went before.
+
+**It never writes a file git tracks.** Words are appended to `inbox.jsonl`, and
+`bin/drain.mjs` folds that into `queue.json` at the top of the daily run — so an
+unauthenticated writer and the daily commit never touch the same file, and the
+queue changes exactly once a day inside a commit that can be read.

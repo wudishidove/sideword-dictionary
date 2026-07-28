@@ -11,7 +11,14 @@
 
 import { readFile, writeFile } from "node:fs/promises";
 
-const HEADWORD = /^[a-z][a-z'-]*$/;
+/**
+ * A record is keyed by a dictionary form, and a dictionary form is sometimes two
+ * words — `brainrot` is properly written `brain rot`. An alias is keyed by a
+ * surface form somebody selected on a page, and the extension only ever calls a
+ * single token a Word, so a space on that side is a key nothing can look up.
+ */
+const RECORD_KEY = /^[a-z][a-z'-]*(?: [a-z][a-z'-]*)*$/;
+const SURFACE = /^[a-z][a-z'-]*$/;
 /** CJK, so an English string left in a Chinese field is caught rather than shipped. */
 const CJK = /[一-鿿]/;
 
@@ -23,7 +30,7 @@ const check = (ok, message) => {
 function checkRecord(key, record) {
   const at = `records["${key}"]`;
   check(record.headword === key, `${at}: keyed as "${key}" but calls itself "${record.headword}"`);
-  check(HEADWORD.test(key), `${at}: not a lowercase Headword`);
+  check(RECORD_KEY.test(key), `${at}: not a lowercase Headword`);
   check(record.ipa === null || typeof record.ipa === "string", `${at}: ipa must be a string or null`);
   check(CJK.test(record.gloss ?? ""), `${at}: gloss is not Chinese`);
   check(
@@ -57,7 +64,7 @@ for (const [key, record] of Object.entries(answers.records ?? {})) {
 }
 
 for (const [surface, headwords] of Object.entries(answers.aliases ?? {})) {
-  check(HEADWORD.test(surface), `aliases["${surface}"]: not a lowercase surface form`);
+  check(SURFACE.test(surface), `aliases["${surface}"]: not a lowercase surface form`);
   check(
     Array.isArray(headwords) && headwords.length > 0,
     `aliases["${surface}"]: must name at least one Headword`,

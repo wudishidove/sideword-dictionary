@@ -1,3 +1,7 @@
 work-order.json
 answers.json
 daily.log
+collect.log
+inbox.jsonl
+inbox.draining
+ratelimit.json

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  The collector, kept alive. It listens on loopback only; Caddy is what makes it
+  reachable, and Caddy only routes /sideword/* to it.
+
+    cp deploy/com.sideword.collector.plist ~/Library/LaunchAgents/
+    launchctl load ~/Library/LaunchAgents/com.sideword.collector.plist
+-->
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.sideword.collector</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/opt/homebrew/bin/node</string>
+        <string>/Users/gogo/project/sideword-dictionary/bin/collect.mjs</string>
+    </array>
+    <key>WorkingDirectory</key>
+    <string>/Users/gogo/project/sideword-dictionary</string>
+    <key>RunAtLoad</key>
+    <true/>
+    <key>KeepAlive</key>
+    <true/>
+    <key>StandardOutPath</key>
+    <string>/Users/gogo/project/sideword-dictionary/collect.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/gogo/project/sideword-dictionary/collect.log</string>
+</dict>
+</plist>
