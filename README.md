@@ -61,8 +61,8 @@ See [AGENT.md](./AGENT.md), which is what the daily run follows.
 
 ```
 node bin/drain.mjs      # fold what the collector took into queue.json
-node bin/probe.mjs      # ask the public dictionary about everything queued
-                        # write answers.json
+node bin/probe.mjs      # ask the public dictionary about up to 250 queued words
+                        # write answers.json, including notWords
 node bin/publish.mjs    # validate, merge, and clear the queue
 ```
 
@@ -72,11 +72,12 @@ already published.
 
 ## The daily schedule
 
-`bin/daily.sh` pulls, checks whether anything is queued, and starts the agent
-only if something is — an agent woken with nothing to do is an agent looking for
-something to do. Everything it is allowed to run is listed in
-`.claude/settings.json`, so a string in the queue cannot talk it into anything
-else.
+`bin/daily.sh` pulls, checks whether anything is queued, probes the public
+dictionary, and starts Codex only if there is judgement work to do — an agent
+woken with nothing to do is an agent looking for something to do. The unattended
+run is pinned to `gpt-5.6-sol` with medium reasoning in a workspace-write sandbox.
+Codex writes only the ignored `answers.json`; the shell validates it, stages only
+`dictionary.json` and `queue.json`, then commits and pushes.
 
 Install it on the machine that keeps the dictionary:
 

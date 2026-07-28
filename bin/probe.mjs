@@ -13,6 +13,8 @@
 import { readFile, writeFile } from "node:fs/promises";
 
 const API = "https://api.dictionaryapi.dev/api/v2/entries/en";
+/** A hard run limit, not merely an instruction the unattended agent may forget. */
+const RUN_CAP = 250;
 
 /** The dictionary's own body for a Word it does not have. Anything else is an outage. */
 function isNoSuchWord(body) {
@@ -50,7 +52,7 @@ const queue = JSON.parse(await readFile("queue.json", "utf8"));
 const dictionary = JSON.parse(await readFile("dictionary.json", "utf8"));
 
 const work = [];
-for (const word of queue.words) {
+for (const word of queue.words.slice(0, RUN_CAP)) {
   const key = word.toLowerCase();
   if (dictionary.aliases[key] || dictionary.records[key]) {
     work.push({ word, status: "already-published" });
@@ -75,7 +77,8 @@ await writeFile("work-order.json", JSON.stringify({ work }, null, 2) + "\n");
 
 const count = (status) => work.filter((w) => w.status === status).length;
 console.log(
-  `${work.length} queued — ${count("found")} in the dictionary, ` +
+  `${queue.words.length} queued — probing ${work.length}: ` +
+    `${count("found")} in the dictionary, ` +
     `${count("no-such-word")} not, ${count("already-published")} already done, ` +
     `${count("could-not-ask")} unreachable`,
 );

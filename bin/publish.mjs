@@ -57,6 +57,20 @@ const queue = JSON.parse(await readFile("queue.json", "utf8"));
 
 const records = { ...dictionary.records };
 const aliases = { ...dictionary.aliases };
+const queued = new Set(queue.words.map((word) => word.toLowerCase()));
+const notWords = new Set();
+
+check(Array.isArray(answers.notWords), `notWords: must be an array`);
+for (const [i, word] of (Array.isArray(answers.notWords) ? answers.notWords : []).entries()) {
+  const at = `notWords[${i}]`;
+  check(typeof word === "string", `${at}: must be a string`);
+  if (typeof word !== "string") continue;
+
+  const key = word.toLowerCase();
+  check(queued.has(key), `${at}: "${word}" is not in the queue`);
+  check(!notWords.has(key), `${at}: "${word}" is listed more than once`);
+  notWords.add(key);
+}
 
 for (const [key, record] of Object.entries(answers.records ?? {})) {
   checkRecord(key, record);
@@ -94,7 +108,9 @@ if (problems.length > 0) {
 }
 
 const published = { version: 1, updatedAt: Date.now(), aliases, records };
-const remaining = queue.words.filter((word) => !reachable(word));
+const remaining = queue.words.filter(
+  (word) => !reachable(word) && !notWords.has(word.toLowerCase()),
+);
 
 await writeFile("dictionary.json", JSON.stringify(published, null, 2) + "\n");
 await writeFile("queue.json", JSON.stringify({ words: remaining }, null, 2) + "\n");
@@ -102,5 +118,6 @@ await writeFile("queue.json", JSON.stringify({ words: remaining }, null, 2) + "\
 const added = Object.keys(records).length - Object.keys(dictionary.records).length;
 console.log(
   `Published ${Object.keys(records).length} records (+${added}), ` +
-    `${Object.keys(aliases).length} aliases. ${remaining.length} left in the queue.`,
+  `${Object.keys(aliases).length} aliases. ${notWords.size} removed as not words. ` +
+  `${remaining.length} left in the queue.`,
 );
