@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": 1785169678833,
+  "updatedAt": 1785210377042,
   "aliases": {
     "strove": [
       "strive"
@@ -22,6 +22,9 @@
     ],
     "enshittification": [
       "enshittification"
+    ],
+    "brainrot": [
+      "brainrot"
     ]
   },
   "records": {
@@ -123,6 +126,28 @@
       "example": {
         "english": "Every social network seems to follow the same path of enshittification.",
         "chinese": "每個社群網站好像都走上同一條劣化的路。"
+      }
+    },
+    "brainrot": {
+      "headword": "brainrot",
+      "ipa": "/ˈbreɪnˌɹɒt/",
+      "gloss": "腦腐",
+      "source": "llm",
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "english": "The dulling of a person's mind, imagined as an illness, from spending too long on trivial online content.",
+          "chinese": "網路上沒營養的東西看太久，腦袋像生了病一樣變得遲鈍。"
+        },
+        {
+          "partOfSpeech": "noun",
+          "english": "Online content of the kind thought to cause this: silly, low-quality, and hard to stop watching.",
+          "chinese": "指會讓人變這樣的內容：無聊、粗製濫造，卻又讓人一直滑下去。"
+        }
+      ],
+      "example": {
+        "english": "Three hours of brainrot later, he could not name a single thing he had watched.",
+        "chinese": "滑了三個小時的廢片，他連自己看過什麼都說不出來。"
       }
     }
   }
