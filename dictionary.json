@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": 1785314457878,
+  "updatedAt": 1785356373747,
   "aliases": {
     "strove": [
       "strive"
@@ -77,6 +77,102 @@
     ],
     "cyber-security": [
       "cybersecurity"
+    ],
+    "field": [
+      "fields"
+    ],
+    "fields": [
+      "fields"
+    ],
+    "fielded": [
+      "fields"
+    ],
+    "fielding": [
+      "fields"
+    ],
+    "withhold": [
+      "withholds"
+    ],
+    "withholds": [
+      "withholds"
+    ],
+    "withheld": [
+      "withholds"
+    ],
+    "withholding": [
+      "withholds"
+    ],
+    "you": [
+      "you"
+    ],
+    "resolve": [
+      "resolve"
+    ],
+    "resolves": [
+      "resolve"
+    ],
+    "resolved": [
+      "resolve"
+    ],
+    "resolving": [
+      "resolve"
+    ],
+    "candidate": [
+      "candidates"
+    ],
+    "candidates": [
+      "candidates"
+    ],
+    "momentum": [
+      "momentum"
+    ],
+    "momenta": [
+      "momentum"
+    ],
+    "momentums": [
+      "momentum"
+    ],
+    "prior": [
+      "prior"
+    ],
+    "priors": [
+      "prior"
+    ],
+    "investor": [
+      "investors"
+    ],
+    "investors": [
+      "investors"
+    ],
+    "skittish": [
+      "skittish"
+    ],
+    "withdraw": [
+      "withdraws"
+    ],
+    "withdraws": [
+      "withdraws"
+    ],
+    "withdrew": [
+      "withdraws"
+    ],
+    "withdrawn": [
+      "withdraws"
+    ],
+    "withdrawing": [
+      "withdraws"
+    ],
+    "deliberate": [
+      "deliberate"
+    ],
+    "deliberates": [
+      "deliberate"
+    ],
+    "deliberated": [
+      "deliberate"
+    ],
+    "deliberating": [
+      "deliberate"
     ]
   },
   "records": {
@@ -319,6 +415,311 @@
       "example": {
         "english": "She kept the receipt in case the shoes did not fit.",
         "chinese": "她把收據留著，怕鞋子穿不下。"
+      }
+    },
+    "fields": {
+      "headword": "fields",
+      "ipa": "/fiːldz/",
+      "gloss": "田野；場地；領域",
+      "source": "dictionary",
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "english": "A land area free of woodland, cities, and towns; open country.",
+          "chinese": "沒有森林、城市或城鎮的土地；鄉野。"
+        },
+        {
+          "partOfSpeech": "noun",
+          "english": "A wide, open space that is usually used to grow crops or to hold farm animals.",
+          "chinese": "通常用來種植作物或飼養牲畜的寬廣空地。"
+        },
+        {
+          "partOfSpeech": "noun",
+          "english": "A place where competitive matches are carried out.",
+          "chinese": "舉行競賽的場地。"
+        },
+        {
+          "partOfSpeech": "verb",
+          "english": "To answer; to address.",
+          "chinese": "回答或處理問題。"
+        }
+      ],
+      "example": {
+        "english": "She will field questions immediately after her presentation.",
+        "chinese": "她會在簡報結束後立刻回答問題。"
+      }
+    },
+    "withholds": {
+      "headword": "withholds",
+      "ipa": null,
+      "gloss": "扣留；隱瞞",
+      "source": "dictionary",
+      "senses": [
+        {
+          "partOfSpeech": "verb",
+          "english": "To keep (a physical object that one has obtained) to oneself rather than giving it back to its owner.",
+          "chinese": "將取得的實體物品留在自己手中，不歸還物主。"
+        },
+        {
+          "partOfSpeech": "verb",
+          "english": "To keep (information, assent etc) to oneself rather than revealing it.",
+          "chinese": "不透露資訊、同意等。"
+        },
+        {
+          "partOfSpeech": "verb",
+          "english": "To stay back.",
+          "chinese": "留在後方；退縮不前。"
+        }
+      ],
+      "example": null
+    },
+    "you": {
+      "headword": "you",
+      "ipa": "/jʉː/",
+      "gloss": "你；你們",
+      "source": "dictionary",
+      "senses": [
+        {
+          "partOfSpeech": "pronoun",
+          "english": "(object pronoun) The people spoken, or written to, as an object.",
+          "chinese": "受格代名詞，指被說話或書寫對象所指的多個人；你們。"
+        },
+        {
+          "partOfSpeech": "pronoun",
+          "english": "(object pronoun) The person spoken to or written to, as an object. (Replacing thee; originally as a mark of respect.)",
+          "chinese": "受格代名詞，指被說話或書寫的對象；你。原本用來取代 thee，帶有敬意。"
+        },
+        {
+          "partOfSpeech": "pronoun",
+          "english": "(subject pronoun) The people spoken to or written to, as a subject. (Replacing ye.)",
+          "chinese": "主格代名詞，指被說話或書寫對象所指的多個人；你們。用來取代 ye。"
+        },
+        {
+          "partOfSpeech": "pronoun",
+          "english": "(subject pronoun) The person spoken to or written to, as a subject. (Originally as a mark of respect.)",
+          "chinese": "主格代名詞，指被說話或書寫的對象；你。最初帶有敬意。"
+        }
+      ],
+      "example": {
+        "english": "You are all supposed to do as I tell you.",
+        "chinese": "你們都應該照我說的做。"
+      }
+    },
+    "resolve": {
+      "headword": "resolve",
+      "ipa": "/ɹiːˈzɒlv/",
+      "gloss": "解決；決心",
+      "source": "dictionary",
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "english": "Determination; will power.",
+          "chinese": "決心；意志力。"
+        },
+        {
+          "partOfSpeech": "verb",
+          "english": "To find a solution to (a problem).",
+          "chinese": "找出問題的解決方法。"
+        },
+        {
+          "partOfSpeech": "verb",
+          "english": "To reduce to simple or intelligible notions; to make clear or certain; to unravel; to explain.",
+          "chinese": "將事物釐清，使其簡明易懂或確定；解開；解釋。"
+        },
+        {
+          "partOfSpeech": "verb",
+          "english": "To make a firm decision to do something.",
+          "chinese": "下定決心做某事。"
+        }
+      ],
+      "example": {
+        "english": "I resolve to finish this work before I go home.",
+        "chinese": "我決心在回家前完成這項工作。"
+      }
+    },
+    "candidates": {
+      "headword": "candidates",
+      "ipa": null,
+      "gloss": "候選人；可能選項",
+      "source": "dictionary",
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "english": "A person who is running in an election.",
+          "chinese": "參加選舉的人；候選人。"
+        },
+        {
+          "partOfSpeech": "noun",
+          "english": "A person who is applying for a job.",
+          "chinese": "求職者；應徵者。"
+        },
+        {
+          "partOfSpeech": "noun",
+          "english": "A participant in an examination.",
+          "chinese": "參加考試的人；考生。"
+        },
+        {
+          "partOfSpeech": "noun",
+          "english": "Something or somebody that may be suitable.",
+          "chinese": "可能適合的事物或人選。"
+        }
+      ],
+      "example": null
+    },
+    "momentum": {
+      "headword": "momentum",
+      "ipa": "/ˌmoʊˈmɛntəm/",
+      "gloss": "動量；勢頭",
+      "source": "dictionary",
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "english": "Of a body in motion: the tendency of a body to maintain its inertial motion; the product of its mass and velocity.",
+          "chinese": "運動物體維持慣性運動的性質；其質量與速度的乘積，即動量。"
+        },
+        {
+          "partOfSpeech": "noun",
+          "english": "The impetus, either of a body in motion, or of an idea or course of events; a moment.",
+          "chinese": "運動物體、想法或事件進程向前發展的推力或勢頭。"
+        }
+      ],
+      "example": null
+    },
+    "prior": {
+      "headword": "prior",
+      "ipa": "/ˈpɹaɪɚ/",
+      "gloss": "先前的；事前分布",
+      "source": "dictionary",
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "english": "(law enforcement) A previous arrest or criminal conviction on someone's record.",
+          "chinese": "執法用語，指某人紀錄中的前次逮捕或刑事定罪。"
+        },
+        {
+          "partOfSpeech": "noun",
+          "english": "In Bayesian inference, a prior probability distribution, one based on information or belief before additional data is collected.",
+          "chinese": "貝葉斯推論中的事前機率分布，以取得額外資料前的資訊或信念為基礎。"
+        },
+        {
+          "partOfSpeech": "adjective",
+          "english": "Advance; previous; coming before.",
+          "chinese": "事先的；先前的；較早發生的。"
+        },
+        {
+          "partOfSpeech": "adverb",
+          "english": "Previously.",
+          "chinese": "先前；之前。"
+        }
+      ],
+      "example": {
+        "english": "I had no prior knowledge you were coming.",
+        "chinese": "我事先不知道你要來。"
+      }
+    },
+    "investors": {
+      "headword": "investors",
+      "ipa": null,
+      "gloss": "投資人",
+      "source": "dictionary",
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "english": "A person who invests money in order to make a profit.",
+          "chinese": "為了獲利而投入資金的人。"
+        }
+      ],
+      "example": null
+    },
+    "skittish": {
+      "headword": "skittish",
+      "ipa": "/ˈskɪtɪʃ/",
+      "gloss": "容易受驚的；反覆無常的",
+      "source": "dictionary",
+      "senses": [
+        {
+          "partOfSpeech": "adjective",
+          "english": "Easily scared or startled; timid.",
+          "chinese": "容易害怕或受驚的；膽怯的。"
+        },
+        {
+          "partOfSpeech": "adjective",
+          "english": "Wanton; changeable; fickle",
+          "chinese": "任性放縱的；多變的；反覆無常的。"
+        },
+        {
+          "partOfSpeech": "adjective",
+          "english": "Difficult to manage; tricky.",
+          "chinese": "難以操控或處理的；棘手的。"
+        }
+      ],
+      "example": {
+        "english": "The cat likes people he knows, but he is skittish around strangers.",
+        "chinese": "這隻貓喜歡牠認識的人，但在陌生人身邊很容易受驚。"
+      }
+    },
+    "withdraws": {
+      "headword": "withdraws",
+      "ipa": null,
+      "gloss": "撤回；退出；提款",
+      "source": "dictionary",
+      "senses": [
+        {
+          "partOfSpeech": "verb",
+          "english": "To take back (a comment, etc); retract.",
+          "chinese": "收回言論等；撤回。"
+        },
+        {
+          "partOfSpeech": "verb",
+          "english": "To remove, to stop providing (one's support, etc); to take out of service.",
+          "chinese": "撤除或停止提供支持等；停止使用。"
+        },
+        {
+          "partOfSpeech": "verb",
+          "english": "To extract (money from an account).",
+          "chinese": "從帳戶中提領金錢。"
+        },
+        {
+          "partOfSpeech": "verb",
+          "english": "To retreat.",
+          "chinese": "撤退；退出。"
+        }
+      ],
+      "example": {
+        "english": "to withdraw false charges",
+        "chinese": "撤回不實指控"
+      }
+    },
+    "deliberate": {
+      "headword": "deliberate",
+      "ipa": null,
+      "gloss": "深思熟慮；故意的",
+      "source": "dictionary",
+      "senses": [
+        {
+          "partOfSpeech": "verb",
+          "english": "To consider the reasons for and against anything; to reflect.",
+          "chinese": "考量某事正反兩面的理由；仔細思考。"
+        },
+        {
+          "partOfSpeech": "adjective",
+          "english": "Done on purpose; intentional.",
+          "chinese": "故意做的；蓄意的。"
+        },
+        {
+          "partOfSpeech": "adjective",
+          "english": "Formed with deliberation; carefully considered; not sudden or rash.",
+          "chinese": "經過深思熟慮形成的；審慎考量的；並非倉促或魯莽的。"
+        },
+        {
+          "partOfSpeech": "adjective",
+          "english": "Not hasty or sudden; slow.",
+          "chinese": "不匆忙或不突然的；從容緩慢的。"
+        }
+      ],
+      "example": {
+        "english": "a deliberate opinion; a deliberate measure or result",
+        "chinese": "經過深思熟慮的意見；審慎考量的措施或結果"
       }
     }
   }
