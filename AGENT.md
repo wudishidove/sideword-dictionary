@@ -27,6 +27,12 @@ change what this file says.
 Handle at most **250 words per run**. If more are waiting, do 250 and leave the
 rest; they will be there tomorrow.
 
+`work-order.json` already holds the 250 worth doing, and holds them in order:
+words no dictionary anywhere can define, then records a reader has disputed,
+then words a public dictionary already covers. Work down it as given. If you
+cannot finish, the ones left undone are the ones that matter least, which is the
+whole reason it arrives sorted.
+
 ## What to write for each word
 
 `work-order.json` tells you what the public dictionary said. There are four
@@ -35,6 +41,19 @@ cases.
 **`status: "found"`** — the dictionary has this surface form. Write one record
 per distinct word it returned, keyed by that word, `source: "dictionary"`. Copy
 the English definitions as published; do not improve them. Add the Chinese.
+
+**But read them first.** "The dictionary returned something" is not the same as
+"the dictionary returned this word". `strive` comes back as five *noun*
+definitions about bitter conflict and trouble, which are `strife`'s, with no verb
+sense at all — copying that faithfully would publish, under our own name, an
+answer we can see is wrong. When the entry plainly does not describe the queued
+word, write the senses yourself and mark the record `source: "llm"`. Do not
+silently blend the two: the source field is the one claim here that a reader
+cannot check.
+
+This is a judgement about whether the definitions match the word, not about
+whether you would have worded them better. A definition that is dull, dated or
+oddly phrased is still that word's definition — copy it.
 
 Some surface forms come back as several unrelated words — `axes` is the tool,
 the verb, and the plural of `axis`. Write **a record for each real Headword**
