@@ -51,21 +51,31 @@ async function lookup(word) {
 const queue = JSON.parse(await readFile("queue.json", "utf8"));
 const dictionary = JSON.parse(await readFile("dictionary.json", "utf8"));
 
+/** What we publish for a queued word today, so that a report can be judged. */
+function publishedFor(key) {
+  const headwords = dictionary.aliases[key] ?? (key in dictionary.records ? [key] : []);
+  return headwords
+    .filter((headword) => headword in dictionary.records)
+    .map((headword) => dictionary.records[headword]);
+}
+
 const work = [];
 for (const word of queue.words.slice(0, RUN_CAP)) {
   const key = word.toLowerCase();
-  if (dictionary.aliases[key] || dictionary.records[key]) {
-    work.push({ word, status: "already-published" });
-    continue;
-  }
+  // `bin/drain.mjs` drops every word this dictionary can already answer, so a
+  // queued word that IS answerable arrived through `/sideword/review`: a reader
+  // is saying the record we publish for it is wrong. Deciding that needs both
+  // sides, so this one gets asked about rather than skipped.
+  const reported = Boolean(dictionary.aliases[key] || dictionary.records[key]);
 
   try {
     const found = await lookup(word);
-    work.push(
-      found === null
-        ? { word, status: "no-such-word", entries: [] }
-        : { word, status: "found", entries: found },
-    );
+    work.push({
+      word,
+      status: reported ? "reported" : found === null ? "no-such-word" : "found",
+      entries: found ?? [],
+      ...(reported ? { published: publishedFor(key) } : {}),
+    });
   } catch (cause) {
     // Left in the queue: not asking is not an answer — the extension's ADR-0005
     // makes the same distinction, for the same reason.
@@ -79,6 +89,6 @@ const count = (status) => work.filter((w) => w.status === status).length;
 console.log(
   `${queue.words.length} queued — probing ${work.length}: ` +
     `${count("found")} in the dictionary, ` +
-    `${count("no-such-word")} not, ${count("already-published")} already done, ` +
+    `${count("no-such-word")} not, ${count("reported")} reported as wrong, ` +
     `${count("could-not-ask")} unreachable`,
 );

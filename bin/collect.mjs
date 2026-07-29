@@ -111,7 +111,15 @@ function body(request) {
   });
 }
 
-async function collect(request) {
+/**
+ * `review` is the same submission with one difference downstream: `bin/drain.mjs`
+ * drops a word the dictionary can already answer, and a reported one is exactly
+ * such a word — somebody read our record and says it is wrong. It bypasses that
+ * drop and nothing else. Same validation, same allowance, same inbox: a reader
+ * who reports a hundred words has spent a hundred of their 250, which is the
+ * only thing keeping the nightly run from being steered by whoever shouts most.
+ */
+async function collect(request, review) {
   let sent;
   try {
     const raw = JSON.parse(await body(request));
@@ -129,11 +137,13 @@ async function collect(request) {
   if (taken.length > 0) {
     await appendFile(
       INBOX,
-      taken.map((word) => JSON.stringify({ word }) + "\n").join(""),
+      taken
+        .map((word) => JSON.stringify(review ? { word, review } : { word }) + "\n")
+        .join(""),
     );
   }
 
-  stamp(`took ${taken.length} of ${sent.length}`);
+  stamp(`took ${taken.length} of ${sent.length}${review ? " to review" : ""}`);
   // The words themselves, not a count. A caller that runs out of allowance
   // half way through a batch has to know *which* half was taken, or it will
   // write off the rest as sent and never offer them again. `refused` is
@@ -147,7 +157,10 @@ async function route(request) {
     return [200, { ok: true }];
   }
   if (request.method === "POST" && path === "/sideword/words") {
-    return collect(request);
+    return collect(request, false);
+  }
+  if (request.method === "POST" && path === "/sideword/review") {
+    return collect(request, true);
   }
   return [404, { error: "no such endpoint" }];
 }

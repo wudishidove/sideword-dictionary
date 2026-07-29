@@ -63,15 +63,20 @@ let unreadable = 0;
 for (const line of (await claim()).split("\n")) {
   if (line.trim() === "") continue;
 
-  let word;
+  let word, review;
   try {
-    word = JSON.parse(line).word;
+    ({ word, review } = JSON.parse(line));
   } catch {
     unreadable += 1;
     continue;
   }
 
-  if (typeof word !== "string" || answered(word) || waiting.has(word)) continue;
+  if (typeof word !== "string" || waiting.has(word)) continue;
+  // Only an ordinary submission is dropped for being answered already. A word
+  // reported through `/sideword/review` is answerable by definition — that is
+  // what it means to say our answer is wrong — so it is the one thing allowed
+  // back into the queue, and `bin/probe.mjs` recognises it by exactly that.
+  if (answered(word) && review !== true) continue;
   waiting.add(word);
   arrived.push(word);
 }

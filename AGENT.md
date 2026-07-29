@@ -29,7 +29,7 @@ rest; they will be there tomorrow.
 
 ## What to write for each word
 
-`work-order.json` tells you what the public dictionary said. There are three
+`work-order.json` tells you what the public dictionary said. There are four
 cases.
 
 **`status: "found"`** — the dictionary has this surface form. Write one record
@@ -67,8 +67,22 @@ form. Decide which of these it is:
 - _Not a word at all._ Add the exact queued string to `notWords`. This is what
   removes it from the queue so it does not wake another agent tomorrow.
 
-**`status: "could-not-ask"` or `"already-published"`** — nothing to do. Leave
-them alone.
+**`status: "reported"`** — this word already has a record here, and a reader sent
+it back through `/sideword/review` to say that record is wrong. `published` is
+what we say about it today; `entries` is what the public dictionary says now.
+
+Judge it on what you find, not on the fact that somebody complained. A report
+says where to look; it never says what the answer is, and the reader who sent it
+cannot see this file.
+
+- _Our record is wrong._ Write the corrected record, and the corrected alias if
+  the surface form belongs under a different Headword. A replacement keeps the
+  same key, so write the whole record rather than the part that changed.
+- _Our record is right._ Write nothing for this word.
+
+Either way it leaves the queue: a report buys one look, not a standing argument.
+
+**`status: "could-not-ask"`** — nothing to do. Leave it alone.
 
 ## The Chinese
 
