@@ -104,6 +104,20 @@ nonsense costs its sender the same as a word. A word must be a single token of
 letters, hyphen and apostrophe, at most 40 characters — the shape a browser
 selection produces. Anything else is dropped without comment.
 
+`POST /sideword/review` takes the same body and says something different with it:
+*the record you publish for this word is wrong.* Words already in the dictionary
+are dropped by the queue above — that is what it is for — and this is the one way
+back in. Same validation and the same 250, so reporting a hundred words costs a
+hundred of your own allowance; that is what keeps the nightly run from being
+steered by whoever shouts loudest. A report says where to look and never what to
+write: the agent re-derives the word and corrects the record only if it finds it
+wrong. See `AGENT.md`.
+
+The two are drained in priority order, least answered first: words no dictionary
+anywhere has, then disputed records, then words a public dictionary already
+covers. More words are probed each night than the agent can handle, because
+asking is one HTTP request and answering is a model reading and writing.
+
 ```sh
 cp deploy/com.sideword.collector.plist ~/Library/LaunchAgents/
 launchctl load ~/Library/LaunchAgents/com.sideword.collector.plist
