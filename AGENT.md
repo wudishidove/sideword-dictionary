@@ -58,8 +58,18 @@ oddly phrased is still that word's definition — copy it.
 Some surface forms come back as several unrelated words — `axes` is the tool,
 the verb, and the plural of `axis`. Write **a record for each real Headword**
 (`axe`, `axis`) and one alias listing both, commonest first. Never merge them
-into one record: the extension shows a user the first Headword and lets them
-reject it in favour of the next, and that only works if they are separate.
+into one record: the extension applies the first Headword and shows the reader
+the rest by their `gloss` — 斧頭 or 軸 — so they can say which one they met. That
+only works if they are separate, and it is the reason a `gloss` has to read like
+an answer rather than a label.
+
+The same goes for **a surface form that is its own Headword and also an inflected
+form of another word.** `keeping` is the participle of `keep` and also a noun —
+`in keeping with`, `in safe keeping`. Write both records, each carrying only its
+own senses, and let the alias hold the ambiguity: `"keeping": ["keep",
+"keeping"]`. Do not put `keep`'s definitions inside the `keeping` record. An
+answer that exists in two places cannot be corrected in one, and correcting a
+record once for everybody is what this dictionary is for.
 
 **`status: "no-such-word"`** — the dictionary has never heard of this surface
 form. Decide which of these it is:
@@ -149,6 +159,20 @@ Four senses is plenty; keep the ones a learner would meet. Always write the
 identity alias for a record you create (`"yeet": ["yeet"]`) — the extension can
 find a record by its own Headword without one, but every other reader is easier
 to write if the table is complete.
+
+**Then write the forms a reader will actually select.** The extension looks a
+record up by the exact lowercased string somebody highlighted on a page; it does
+not work out the base form first. So a record whose inflections have no alias is
+a record those readers never reach — `yeet` without `yeeted` sends whoever met
+"he yeeted it across the room" to a public dictionary that has never heard of
+either, and that Word stays Unlisted for good. For every record you write, alias
+the plural and third person, the past and past participle, the present
+participle, and any other spelling of the same word that is still **one token**
+(`cyber-security → ["cybersecurity"]`). A spaced form like `brain rot` is not a
+Word to the extension and cannot be an alias key; the validator rejects it.
+
+Judge each form on whether a reader would meet it, not on completeness. `yeeted`
+and `yeeting` are worth writing; `documentations` is not.
 
 `bin/publish.mjs` refuses an alias pointing at a record that is not there, a
 Chinese field with no Chinese in it, a record with no senses, and any change that

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": 1785269873102,
+  "updatedAt": 1785314457878,
   "aliases": {
     "strove": [
       "strive"
@@ -36,7 +36,47 @@
       "documentation"
     ],
     "keeping": [
+      "keep",
       "keeping"
+    ],
+    "keep": [
+      "keep"
+    ],
+    "keeps": [
+      "keep"
+    ],
+    "kept": [
+      "keep"
+    ],
+    "strives": [
+      "strive"
+    ],
+    "strived": [
+      "strive"
+    ],
+    "striving": [
+      "strive"
+    ],
+    "yeets": [
+      "yeet"
+    ],
+    "yeeted": [
+      "yeet"
+    ],
+    "yeeting": [
+      "yeet"
+    ],
+    "rizzed": [
+      "rizz"
+    ],
+    "rizzing": [
+      "rizz"
+    ],
+    "doom-scrolling": [
+      "doomscrolling"
+    ],
+    "cyber-security": [
+      "cybersecurity"
     ]
   },
   "records": {
@@ -230,19 +270,9 @@
     "keeping": {
       "headword": "keeping",
       "ipa": "/ˈkiːpɪŋ/",
-      "gloss": "保持；保管；協調",
+      "gloss": "相稱；保管",
       "source": "dictionary",
       "senses": [
-        {
-          "partOfSpeech": "verb",
-          "english": "To continue in (a course or mode of action); not to intermit or fall from; to uphold or maintain.",
-          "chinese": "持續採取某種做法或行動方式；不中斷或偏離；維持下去。"
-        },
-        {
-          "partOfSpeech": "verb",
-          "english": "To wait for, keep watch for.",
-          "chinese": "等候或守候。"
-        },
         {
           "partOfSpeech": "noun",
           "english": "Conformity or harmony.",
@@ -257,6 +287,38 @@
       "example": {
         "english": "The foreground of this painting is not in keeping.",
         "chinese": "這幅畫的前景不協調。"
+      }
+    },
+    "keep": {
+      "headword": "keep",
+      "ipa": "/kiːp/",
+      "gloss": "保留；保持",
+      "source": "llm",
+      "senses": [
+        {
+          "partOfSpeech": "verb",
+          "english": "To continue to have something rather than give it up or throw it away.",
+          "chinese": "繼續擁有某個東西，沒有交出去也沒有丟掉。"
+        },
+        {
+          "partOfSpeech": "verb",
+          "english": "To cause someone or something to stay in a particular state or place.",
+          "chinese": "讓某個人或某個東西維持在某種狀態或某個位置。"
+        },
+        {
+          "partOfSpeech": "verb",
+          "english": "To store something in a particular place, so that it can be found there again.",
+          "chinese": "把東西固定放在某個地方，下次還找得到。"
+        },
+        {
+          "partOfSpeech": "verb",
+          "english": "To do what one promised, or to observe a rule or an appointment.",
+          "chinese": "說到做到；遵守規定或守住約定。"
+        }
+      ],
+      "example": {
+        "english": "She kept the receipt in case the shoes did not fit.",
+        "chinese": "她把收據留著，怕鞋子穿不下。"
       }
     }
   }
