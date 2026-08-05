@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": 1785356373747,
+  "updatedAt": 1785961090624,
   "aliases": {
     "strove": [
       "strive"
@@ -173,6 +173,15 @@
     ],
     "deliberating": [
       "deliberate"
+    ],
+    "tldr": [
+      "tldr"
+    ],
+    "tldrs": [
+      "tldr"
+    ],
+    "grammars": [
+      "grammars"
     ]
   },
   "records": {
@@ -721,6 +730,57 @@
         "english": "a deliberate opinion; a deliberate measure or result",
         "chinese": "經過深思熟慮的意見；審慎考量的措施或結果"
       }
+    },
+    "tldr": {
+      "headword": "tldr",
+      "ipa": null,
+      "gloss": "太長沒看；摘要",
+      "source": "llm",
+      "senses": [
+        {
+          "partOfSpeech": "interjection",
+          "english": "Used to say that a text is too long and has not been read.",
+          "chinese": "用來表示一段文字太長，所以沒有讀完或根本沒讀。"
+        },
+        {
+          "partOfSpeech": "noun",
+          "english": "A short summary of a longer text.",
+          "chinese": "較長文字內容的簡短摘要。"
+        }
+      ],
+      "example": {
+        "english": "The report is fifty pages long, so can you give me a tldr?",
+        "chinese": "這份報告有五十頁，可以給我一個簡短摘要嗎？"
+      }
+    },
+    "grammars": {
+      "headword": "grammars",
+      "ipa": null,
+      "gloss": "文法；文法體系",
+      "source": "dictionary",
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "english": "A system of rules and principles for speaking and writing a language.",
+          "chinese": "一套規範語言口說與書寫方式的規則和原則。"
+        },
+        {
+          "partOfSpeech": "noun",
+          "english": "The study of the internal structure of words (morphology) and the use of words in the construction of phrases and sentences (syntax).",
+          "chinese": "研究詞語內部結構（構詞學），以及詞語如何組成片語和句子（句法學）的學科。"
+        },
+        {
+          "partOfSpeech": "noun",
+          "english": "A book describing the rules of grammar of a language.",
+          "chinese": "說明某種語言文法規則的書。"
+        },
+        {
+          "partOfSpeech": "noun",
+          "english": "A formal system specifying the syntax of a language.",
+          "chinese": "用來規定一種語言句法的形式系統。"
+        }
+      ],
+      "example": null
     }
   }
 }
