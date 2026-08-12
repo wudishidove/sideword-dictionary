@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": 1786509738097,
+  "updatedAt": 1786565871166,
   "aliases": {
     "strove": [
       "strive"
@@ -185,6 +185,22 @@
     ],
     "rhythmic": [
       "rhythmic"
+    ],
+    "separate": [
+      "separate"
+    ],
+    "separates": [
+      "separate",
+      "separates"
+    ],
+    "separated": [
+      "separate"
+    ],
+    "separating": [
+      "separate"
+    ],
+    "flawless": [
+      "flawless"
     ]
   },
   "records": {
@@ -813,6 +829,74 @@
         }
       ],
       "example": null
+    },
+    "separate": {
+      "headword": "separate",
+      "ipa": null,
+      "gloss": "分開；分隔",
+      "source": "dictionary",
+      "senses": [
+        {
+          "partOfSpeech": "verb",
+          "english": "To divide (a thing) into separate parts.",
+          "chinese": "把某個東西分成數個獨立的部分。"
+        },
+        {
+          "partOfSpeech": "verb",
+          "english": "To disunite from a group or mass; to disconnect.",
+          "chinese": "使某物脫離群體或整體；使其斷開連結。"
+        },
+        {
+          "partOfSpeech": "verb",
+          "english": "To cause (things or people) to be separate.",
+          "chinese": "使多個事物或人彼此分開。"
+        },
+        {
+          "partOfSpeech": "verb",
+          "english": "To divide itself into separate pieces or substances.",
+          "chinese": "自行分離成不同的部分或物質。"
+        },
+        {
+          "partOfSpeech": "verb",
+          "english": "To set apart; to select from among others, as for a special use or service.",
+          "chinese": "把某人或某物挑出來，供特殊用途或任務使用。"
+        }
+      ],
+      "example": {
+        "english": "If the kids get too noisy, separate them for a few minutes.",
+        "chinese": "如果孩子們太吵，就讓他們分開幾分鐘。"
+      }
+    },
+    "separates": {
+      "headword": "separates",
+      "ipa": null,
+      "gloss": "單件販售的商品或服飾",
+      "source": "dictionary",
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "english": "(usually in the plural) Anything that is sold by itself, especially an article of clothing.",
+          "chinese": "（通常用複數）單獨販售的商品，尤指可分開搭配購買的服飾。"
+        }
+      ],
+      "example": null
+    },
+    "flawless": {
+      "headword": "flawless",
+      "ipa": "/ˈflɔːləs/",
+      "gloss": "完美無瑕",
+      "source": "dictionary",
+      "senses": [
+        {
+          "partOfSpeech": "adjective",
+          "english": "Without flaws, defects, or shortcomings; perfect.",
+          "chinese": "沒有瑕疵、缺陷或不足；完美的。"
+        }
+      ],
+      "example": {
+        "english": "The pianist’s performance this evening was flawless.",
+        "chinese": "那位鋼琴家今晚的演出完美無瑕。"
+      }
     }
   }
 }
