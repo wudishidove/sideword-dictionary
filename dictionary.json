@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": 1785961090624,
+  "updatedAt": 1786509738097,
   "aliases": {
     "strove": [
       "strive"
@@ -182,6 +182,9 @@
     ],
     "grammars": [
       "grammars"
+    ],
+    "rhythmic": [
+      "rhythmic"
     ]
   },
   "records": {
@@ -778,6 +781,35 @@
           "partOfSpeech": "noun",
           "english": "A formal system specifying the syntax of a language.",
           "chinese": "用來規定一種語言句法的形式系統。"
+        }
+      ],
+      "example": null
+    },
+    "rhythmic": {
+      "headword": "rhythmic",
+      "ipa": "/ˈɹɪð.mək/",
+      "gloss": "有節奏的",
+      "source": "dictionary",
+      "senses": [
+        {
+          "partOfSpeech": "adjective",
+          "english": "Of or relating to rhythm.",
+          "chinese": "節奏的，或與節奏有關的。"
+        },
+        {
+          "partOfSpeech": "adjective",
+          "english": "Characterized by rhythm.",
+          "chinese": "具有節奏特徵的。"
+        },
+        {
+          "partOfSpeech": "adjective",
+          "english": "Written in verse, especially rhyming verse.",
+          "chinese": "以韻文寫成的，尤指押韻的韻文。"
+        },
+        {
+          "partOfSpeech": "adjective",
+          "english": "With regular, repetitive motion or sound.",
+          "chinese": "動作或聲音規律重複的。"
         }
       ],
       "example": null
