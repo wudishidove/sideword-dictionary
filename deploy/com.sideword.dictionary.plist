@@ -10,9 +10,13 @@
 		<string>/Users/gogo/project/sideword-dictionary/bin/daily.sh</string>
 	</array>
 
-	<!-- 04:17, because every job that asks for "4am" fires at 4:00. -->
+	<!-- Wednesdays at 04:17. Weekly, because a day's worth of queue is rarely
+	     worth waking Codex for; 04:17 because every job that asks for "4am"
+	     fires at 4:00. -->
 	<key>StartCalendarInterval</key>
 	<dict>
+		<key>Weekday</key>
+		<integer>3</integer>
 		<key>Hour</key>
 		<integer>4</integer>
 		<key>Minute</key>
