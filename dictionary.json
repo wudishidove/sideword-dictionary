@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": 1786565871166,
+  "updatedAt": 1792647751822,
   "aliases": {
     "strove": [
       "strive"
@@ -201,6 +201,114 @@
     ],
     "flawless": [
       "flawless"
+    ],
+    "concept": [
+      "concept"
+    ],
+    "concepts": [
+      "concept"
+    ],
+    "claude": [
+      "claude"
+    ],
+    "bullish": [
+      "bullish"
+    ],
+    "envelope": [
+      "envelope"
+    ],
+    "envelopes": [
+      "envelope"
+    ],
+    "calmar": [
+      "calmar"
+    ],
+    "calmars": [
+      "calmar"
+    ],
+    "calamar": [
+      "calmar"
+    ],
+    "calamars": [
+      "calmar"
+    ],
+    "proactive": [
+      "proactive"
+    ],
+    "campaign": [
+      "campaign"
+    ],
+    "campaigns": [
+      "campaign"
+    ],
+    "campaigned": [
+      "campaign"
+    ],
+    "campaigning": [
+      "campaign"
+    ],
+    "wobble": [
+      "wobble"
+    ],
+    "wobbles": [
+      "wobble"
+    ],
+    "wobbled": [
+      "wobble"
+    ],
+    "wobbling": [
+      "wobble"
+    ],
+    "rustic": [
+      "rustic"
+    ],
+    "rustics": [
+      "rustic"
+    ],
+    "shove": [
+      "shove"
+    ],
+    "shoves": [
+      "shove"
+    ],
+    "shoved": [
+      "shove"
+    ],
+    "shoving": [
+      "shove"
+    ],
+    "manageable": [
+      "manageable"
+    ],
+    "passive": [
+      "passive"
+    ],
+    "passives": [
+      "passive"
+    ],
+    "concede": [
+      "concede"
+    ],
+    "concedes": [
+      "concede"
+    ],
+    "conceded": [
+      "concede"
+    ],
+    "conceding": [
+      "concede"
+    ],
+    "fury": [
+      "fury"
+    ],
+    "furies": [
+      "fury"
+    ],
+    "scenario": [
+      "scenario"
+    ],
+    "scenarios": [
+      "scenario"
     ]
   },
   "records": {
@@ -897,6 +1005,346 @@
         "english": "The pianist’s performance this evening was flawless.",
         "chinese": "那位鋼琴家今晚的演出完美無瑕。"
       }
+    },
+    "concept": {
+      "headword": "concept",
+      "ipa": "/ˈkɒn.sɛpt/",
+      "gloss": "概念",
+      "source": "dictionary",
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "english": "An abstract and general idea; an abstraction.",
+          "chinese": "抽象而概括的想法；概念。"
+        },
+        {
+          "partOfSpeech": "noun",
+          "english": "Understanding retained in the mind, from experience, reasoning and imagination; a generalization (generic, basic form), or abstraction (mental impression), of a particular set of instances or occurrences (specific, though different, recorded manifestations of the concept).",
+          "chinese": "透過經驗、推理與想像在心中形成的理解，把一組具體事例或事件歸納為共同的概念。"
+        },
+        {
+          "partOfSpeech": "noun",
+          "english": "In generic programming, a description of supported operations on a type, including their syntax and semantics.",
+          "chinese": "在泛型程式設計中，對某型別所支援操作的描述，包括其語法與語意。"
+        }
+      ],
+      "example": null
+    },
+    "bullish": {
+      "headword": "bullish",
+      "ipa": "/ˈbʊlɪʃ/",
+      "gloss": "看漲的；樂觀的",
+      "source": "llm",
+      "senses": [
+        {
+          "partOfSpeech": "adjective",
+          "english": "Expecting prices in a financial market to rise, or showing such an expectation.",
+          "chinese": "預期金融市場價格會上漲的，或表現出這種預期的。"
+        },
+        {
+          "partOfSpeech": "adjective",
+          "english": "Confident and optimistic about future success.",
+          "chinese": "對未來的成功抱持信心與樂觀態度的。"
+        }
+      ],
+      "example": null
+    },
+    "envelope": {
+      "headword": "envelope",
+      "ipa": "/ˈɛnvəloʊp/",
+      "gloss": "信封；包覆層",
+      "source": "llm",
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "english": "A flat paper container used to enclose a letter or other documents.",
+          "chinese": "用來裝信件或文件的扁平紙袋。"
+        },
+        {
+          "partOfSpeech": "noun",
+          "english": "An outer covering or enclosing layer.",
+          "chinese": "包住某物的外層或覆膜。"
+        },
+        {
+          "partOfSpeech": "noun",
+          "english": "The limits within which a system or activity can operate.",
+          "chinese": "系統或活動能夠運作的範圍或極限。"
+        },
+        {
+          "partOfSpeech": "noun",
+          "english": "A curve or outline that bounds a family of curves or the changing amplitude of a signal.",
+          "chinese": "包住一組曲線的邊界曲線，或表示訊號振幅隨時間變化之外緣的曲線。"
+        }
+      ],
+      "example": null
+    },
+    "calmar": {
+      "headword": "calmar",
+      "ipa": null,
+      "gloss": "魷魚（罕用詞）",
+      "source": "llm",
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "english": "A rare word for a squid, a marine mollusk with eight arms and two longer tentacles.",
+          "chinese": "魷魚的罕用名稱；指具有八隻腕及兩隻較長觸腕的海生軟體動物。"
+        }
+      ],
+      "example": null
+    },
+    "proactive": {
+      "headword": "proactive",
+      "ipa": "/proʊˈæktɪv/",
+      "gloss": "積極主動的",
+      "source": "llm",
+      "senses": [
+        {
+          "partOfSpeech": "adjective",
+          "english": "Taking action in advance to bring about a desired result or prevent a problem.",
+          "chinese": "預先採取行動，以達成目標或防止問題發生的。"
+        }
+      ],
+      "example": null
+    },
+    "campaign": {
+      "headword": "campaign",
+      "ipa": "/kæmˈpeɪn/",
+      "gloss": "活動；競選；戰役",
+      "source": "llm",
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "english": "An organized series of activities intended to achieve a particular goal.",
+          "chinese": "為達成特定目標而有計畫推動的一連串活動。"
+        },
+        {
+          "partOfSpeech": "noun",
+          "english": "An organized effort to win an election.",
+          "chinese": "為贏得選舉而進行的競選活動。"
+        },
+        {
+          "partOfSpeech": "noun",
+          "english": "A connected series of military operations carried out toward a strategic goal.",
+          "chinese": "為達成戰略目標而進行的一連串軍事行動。"
+        },
+        {
+          "partOfSpeech": "verb",
+          "english": "To take part in organized activities to achieve a goal, especially to win an election or bring about change.",
+          "chinese": "參與有組織的活動以達成目標，尤其指競選或推動改變。"
+        }
+      ],
+      "example": null
+    },
+    "wobble": {
+      "headword": "wobble",
+      "ipa": "/ˈwɑːbəl/",
+      "gloss": "搖晃；動搖",
+      "source": "llm",
+      "senses": [
+        {
+          "partOfSpeech": "verb",
+          "english": "To move unsteadily from side to side.",
+          "chinese": "不穩地左右搖晃。"
+        },
+        {
+          "partOfSpeech": "verb",
+          "english": "To become uncertain, hesitant, or less stable.",
+          "chinese": "變得猶豫、不堅定或不穩定。"
+        },
+        {
+          "partOfSpeech": "noun",
+          "english": "An unsteady side-to-side movement.",
+          "chinese": "不穩的左右晃動。"
+        },
+        {
+          "partOfSpeech": "noun",
+          "english": "A brief period of uncertainty or instability.",
+          "chinese": "短暫的動搖或不穩定狀態。"
+        }
+      ],
+      "example": null
+    },
+    "rustic": {
+      "headword": "rustic",
+      "ipa": "/ˈrʌstɪk/",
+      "gloss": "鄉村的；質樸的",
+      "source": "llm",
+      "senses": [
+        {
+          "partOfSpeech": "adjective",
+          "english": "Relating to the countryside or rural life.",
+          "chinese": "與鄉村或農村生活有關的。"
+        },
+        {
+          "partOfSpeech": "adjective",
+          "english": "Simple, rough, and natural in appearance, as associated with country life.",
+          "chinese": "外觀簡樸、粗獷而自然，帶有鄉村風格的。"
+        },
+        {
+          "partOfSpeech": "noun",
+          "english": "A person from the countryside, especially one regarded as unsophisticated.",
+          "chinese": "鄉下人，尤指被認為不諳世故的人；可能帶有貶意。"
+        }
+      ],
+      "example": null
+    },
+    "shove": {
+      "headword": "shove",
+      "ipa": "/ʃʌv/",
+      "gloss": "推擠；硬塞",
+      "source": "llm",
+      "senses": [
+        {
+          "partOfSpeech": "verb",
+          "english": "To push someone or something roughly or forcefully.",
+          "chinese": "粗魯或用力地推某人或某物。"
+        },
+        {
+          "partOfSpeech": "verb",
+          "english": "To put something somewhere quickly or carelessly, often by forcing it into a space.",
+          "chinese": "迅速或隨手把東西放到某處，常指硬塞進去。"
+        },
+        {
+          "partOfSpeech": "noun",
+          "english": "A rough or forceful push.",
+          "chinese": "粗魯或用力的一推。"
+        }
+      ],
+      "example": null
+    },
+    "manageable": {
+      "headword": "manageable",
+      "ipa": "/ˈmænɪdʒəbəl/",
+      "gloss": "可應付的；易於管理的",
+      "source": "llm",
+      "senses": [
+        {
+          "partOfSpeech": "adjective",
+          "english": "Possible to handle, control, or deal with without too much difficulty.",
+          "chinese": "能夠處理、控制或應付，不會太困難的。"
+        }
+      ],
+      "example": null
+    },
+    "passive": {
+      "headword": "passive",
+      "ipa": "/ˈpæsɪv/",
+      "gloss": "被動的",
+      "source": "llm",
+      "senses": [
+        {
+          "partOfSpeech": "adjective",
+          "english": "Accepting what happens without taking action or resisting.",
+          "chinese": "接受事情發生而不主動行動或反抗的。"
+        },
+        {
+          "partOfSpeech": "adjective",
+          "english": "Describing a verb construction in which the grammatical subject receives the action.",
+          "chinese": "指文法主詞承受動作的被動語態。"
+        },
+        {
+          "partOfSpeech": "adjective",
+          "english": "Operating without an active power source or without adding energy to a system.",
+          "chinese": "不靠主動供電運作，或不向系統增加能量的。"
+        },
+        {
+          "partOfSpeech": "noun",
+          "english": "The passive voice, or a verb form or construction in that voice.",
+          "chinese": "被動語態，或採用被動語態的動詞形式或句式。"
+        }
+      ],
+      "example": null
+    },
+    "concede": {
+      "headword": "concede",
+      "ipa": "/kənˈsiːd/",
+      "gloss": "承認；讓步",
+      "source": "llm",
+      "senses": [
+        {
+          "partOfSpeech": "verb",
+          "english": "To admit that something is true or valid, often reluctantly.",
+          "chinese": "承認某事屬實或某觀點有道理，通常是不情願地承認。"
+        },
+        {
+          "partOfSpeech": "verb",
+          "english": "To accept that one has lost a contest or argument.",
+          "chinese": "承認自己在比賽、選舉或爭論中落敗。"
+        },
+        {
+          "partOfSpeech": "verb",
+          "english": "To give up or grant something after resistance or negotiation.",
+          "chinese": "經過抵抗或協商後，放棄或同意給予某項事物。"
+        },
+        {
+          "partOfSpeech": "verb",
+          "english": "To allow an opponent to score a goal or point.",
+          "chinese": "讓對手進球或得分。"
+        }
+      ],
+      "example": null
+    },
+    "fury": {
+      "headword": "fury",
+      "ipa": "/ˈfjʊri/",
+      "gloss": "狂怒；猛烈",
+      "source": "llm",
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "english": "Extreme anger.",
+          "chinese": "極度的憤怒。"
+        },
+        {
+          "partOfSpeech": "noun",
+          "english": "Violent force or intensity.",
+          "chinese": "猛烈的力量或強度。"
+        },
+        {
+          "partOfSpeech": "noun",
+          "english": "In Greek and Roman mythology, one of the female spirits who punish wrongdoing, especially crimes against family members.",
+          "chinese": "希臘與羅馬神話中懲罰惡行的復仇女神之一，尤其追究傷害親人的罪行。"
+        }
+      ],
+      "example": null
+    },
+    "scenario": {
+      "headword": "scenario",
+      "ipa": "/səˈnɛrioʊ/",
+      "gloss": "可能情境；劇情概要",
+      "source": "llm",
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "english": "An imagined or possible situation, or a sequence of events that might happen.",
+          "chinese": "設想或可能發生的情況，或一連串可能發生的事件。"
+        },
+        {
+          "partOfSpeech": "noun",
+          "english": "An outline of the plot and scenes of a film, play, or similar work.",
+          "chinese": "電影、戲劇等作品的情節與場景概要。"
+        }
+      ],
+      "example": null
+    },
+    "claude": {
+      "headword": "claude",
+      "ipa": "/klɔːd/",
+      "gloss": "克勞德；Anthropic 的人工智慧助理",
+      "source": "llm",
+      "senses": [
+        {
+          "partOfSpeech": "proper noun",
+          "english": "An artificial intelligence assistant and family of language models developed by Anthropic.",
+          "chinese": "Anthropic 開發的人工智慧助理及語言模型系列。"
+        },
+        {
+          "partOfSpeech": "proper noun",
+          "english": "A given name, especially a masculine name used in French and English.",
+          "chinese": "人名，常見於法語及英語，尤其用作男性名字。"
+        }
+      ],
+      "example": null
     }
   }
 }
