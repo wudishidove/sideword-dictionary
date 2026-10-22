@@ -32,7 +32,9 @@ const PROBE_CAP = 2 * RUN_CAP;
  * for. `reported` has an answer that somebody is looking at and says is wrong.
  * `found` is already covered by a public dictionary, so a reader is not stuck —
  * it is worth doing, just last, and over a few months of 250 a day the ordinary
- * words get collected anyway. `could-not-ask` is not an answer and stays queued.
+ * words get collected anyway. `could-not-ask` is an outage, not an answer, and
+ * goes last: the agent writes those itself, so they are the ones a dictionary
+ * would have done better.
  */
 const PRIORITY = {
   "no-such-word": 0,
@@ -102,8 +104,8 @@ for (const word of queue.words.slice(0, PROBE_CAP)) {
       ...(reported ? { published: publishedFor(key) } : {}),
     });
   } catch (cause) {
-    // Left in the queue: not asking is not an answer — the extension's ADR-0005
-    // makes the same distinction, for the same reason.
+    // Not an answer — the extension's ADR-0005 makes the same distinction — but
+    // not a reason to wait either. AGENT.md has the agent define it itself.
     probed.push({ word, status: "could-not-ask", error: String(cause) });
   }
 }

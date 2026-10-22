@@ -40,7 +40,7 @@ node bin/probe.mjs
 node -e 'require("fs").writeFileSync("answers.json", JSON.stringify({ records: {}, aliases: {}, notWords: [] }, null, 2) + "\n")'
 
 queue_before=$(git hash-object queue.json)
-stamp "starting Codex (gpt-5.6-sol, medium)"
+stamp "starting Codex (gpt-6.1-sol, medium)"
 
 # Codex only writes the ignored answers file. The shell owns probing, validation,
 # the exact files staged, and the public push. It therefore needs workspace writes,
@@ -50,7 +50,7 @@ codex exec \
   --ignore-user-config \
   --ignore-rules \
   --color never \
-  --model gpt-5.6-sol \
+  --model gpt-6.1-sol \
   --config 'model_reasoning_effort="medium"' \
   --sandbox workspace-write \
   --cd "$PWD" \

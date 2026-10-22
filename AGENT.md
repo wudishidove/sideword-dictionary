@@ -111,7 +111,14 @@ cannot see this file.
 
 Either way it leaves the queue: a report buys one look, not a standing argument.
 
-**`status: "could-not-ask"`** — nothing to do. Leave it alone.
+**`status: "could-not-ask"`** — the public dictionary was down or refused us,
+so there is no published entry to copy or to check against. Do not wait for it:
+a reader is holding a card with nothing on the back, and an outage can last
+weeks. Make the same judgement as for `no-such-word` — inflected form, misspelling,
+real word, or not a word — but out of your own knowledge, and write every record
+it produces with `source: "llm"`. That holds for ordinary words too: nothing a
+dictionary published passed through your hands, so the English is yours, and
+the source field must say so.
 
 ## The Chinese
 
