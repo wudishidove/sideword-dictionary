@@ -145,7 +145,7 @@ translates anything that comes from here.
   "notWords": ["asdfgh"],
   "records": {
     "yeet": {
-      "headword": "yeet",           // must equal the key
+      "headword": "yeet",           // must equal the key; lowercase, names too
       "ipa": "/jiːt/",              // or null
       "gloss": "用力扔",             // short, Chinese, always present
       "source": "llm",              // "dictionary" if the English came from one
