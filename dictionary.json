@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": 1792647751822,
+  "updatedAt": 1793676380547,
   "aliases": {
     "strove": [
       "strive"
@@ -309,6 +309,72 @@
     ],
     "scenarios": [
       "scenario"
+    ],
+    "burst": [
+      "burst"
+    ],
+    "bursts": [
+      "burst"
+    ],
+    "bursting": [
+      "burst"
+    ],
+    "initiative": [
+      "initiative"
+    ],
+    "initiatives": [
+      "initiative"
+    ],
+    "sustain": [
+      "sustain"
+    ],
+    "sustains": [
+      "sustain"
+    ],
+    "sustained": [
+      "sustain"
+    ],
+    "sustaining": [
+      "sustain"
+    ],
+    "crucial": [
+      "crucial"
+    ],
+    "bounce": [
+      "bounce"
+    ],
+    "bounces": [
+      "bounce"
+    ],
+    "bounced": [
+      "bounce"
+    ],
+    "bouncing": [
+      "bounce"
+    ],
+    "disengage": [
+      "disengage"
+    ],
+    "disengages": [
+      "disengage"
+    ],
+    "disengaged": [
+      "disengage"
+    ],
+    "disengaging": [
+      "disengage"
+    ],
+    "outscale": [
+      "outscale"
+    ],
+    "outscales": [
+      "outscale"
+    ],
+    "outscaled": [
+      "outscale"
+    ],
+    "outscaling": [
+      "outscale"
     ]
   },
   "records": {
@@ -1345,6 +1411,212 @@
         }
       ],
       "example": null
+    },
+    "burst": {
+      "headword": "burst",
+      "ipa": "/bɜːst/",
+      "gloss": "爆裂；突然爆發",
+      "source": "dictionary",
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "english": "A sudden, often intense, expression, manifestation or display.",
+          "chinese": "突然且往往強烈的情緒表達、現象或表現。"
+        },
+        {
+          "partOfSpeech": "verb",
+          "english": "To break from internal pressure.",
+          "chinese": "因內部壓力而爆裂。"
+        },
+        {
+          "partOfSpeech": "verb",
+          "english": "To enter or exit hurriedly and unexpectedly.",
+          "chinese": "突然匆忙地闖入或衝出。"
+        },
+        {
+          "partOfSpeech": "verb",
+          "english": "To erupt; to change state suddenly as if bursting.",
+          "chinese": "突然爆發，或像爆裂般驟然改變狀態。"
+        }
+      ],
+      "example": {
+        "english": "I blew the balloon up too much, and it burst.",
+        "chinese": "我把氣球吹得太大，結果它爆了。"
+      }
+    },
+    "initiative": {
+      "headword": "initiative",
+      "ipa": "/ɪˈnɪʃətɪv/",
+      "gloss": "主動性；新措施",
+      "source": "dictionary",
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "english": "A beginning; a first move.",
+          "chinese": "開端；率先採取的行動。"
+        },
+        {
+          "partOfSpeech": "noun",
+          "english": "A new development; a fresh approach to something; a new way of dealing with a problem.",
+          "chinese": "新的發展、做法，或解決問題的新措施。"
+        },
+        {
+          "partOfSpeech": "noun",
+          "english": "The ability to act first or on one's own.",
+          "chinese": "主動行事或獨立採取行動的能力。"
+        },
+        {
+          "partOfSpeech": "noun",
+          "english": "An issue to be voted on, brought to the ballot by a sufficient number of signatures from among the voting public.",
+          "chinese": "由足夠數量的選民連署提出，交付投票表決的議案。"
+        }
+      ],
+      "example": null
+    },
+    "sustain": {
+      "headword": "sustain",
+      "ipa": "/səˈsteɪn/",
+      "gloss": "維持；支撐",
+      "source": "dictionary",
+      "senses": [
+        {
+          "partOfSpeech": "verb",
+          "english": "To maintain, or keep in existence.",
+          "chinese": "使某事物維持下去或繼續存在。"
+        },
+        {
+          "partOfSpeech": "verb",
+          "english": "To provide for or nourish.",
+          "chinese": "提供生活所需或養分。"
+        },
+        {
+          "partOfSpeech": "verb",
+          "english": "To experience or suffer (an injury, etc.).",
+          "chinese": "遭受傷害、損失等。"
+        },
+        {
+          "partOfSpeech": "verb",
+          "english": "To confirm, prove, or corroborate; to uphold.",
+          "chinese": "確認、證實，或支持某項主張、指控等。"
+        }
+      ],
+      "example": {
+        "english": "The building sustained major damage in the earthquake.",
+        "chinese": "這棟建築在地震中嚴重受損。"
+      }
+    },
+    "crucial": {
+      "headword": "crucial",
+      "ipa": "/ˈkɹuː.ʃəl/",
+      "gloss": "至關重要的",
+      "source": "dictionary",
+      "senses": [
+        {
+          "partOfSpeech": "adjective",
+          "english": "Essential or decisive for determining the outcome or future of something; extremely important.",
+          "chinese": "對結果或未來具有決定性影響的；極為重要的。"
+        },
+        {
+          "partOfSpeech": "adjective",
+          "english": "Cruciform or cruciate; cross-shaped.",
+          "chinese": "呈十字形的。"
+        },
+        {
+          "partOfSpeech": "adjective",
+          "english": "(Bermuda) Very good; excellent; particularly applied to reggae music.",
+          "chinese": "（百慕達用語）非常棒的；尤其用來形容雷鬼音樂。"
+        }
+      ],
+      "example": {
+        "english": "A secure supply of crude oil is crucial for any modern nation, let alone a superpower.",
+        "chinese": "穩定的原油供應對任何現代國家都至關重要，更不用說超級強權了。"
+      }
+    },
+    "bounce": {
+      "headword": "bounce",
+      "ipa": "/baʊns/",
+      "gloss": "彈跳；反彈",
+      "source": "dictionary",
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "english": "A change of direction of motion after hitting the ground or an obstacle.",
+          "chinese": "撞到地面或障礙物後改變運動方向的反彈。"
+        },
+        {
+          "partOfSpeech": "verb",
+          "english": "To change the direction of motion after hitting an obstacle.",
+          "chinese": "撞到障礙物後反彈，改變運動方向。"
+        },
+        {
+          "partOfSpeech": "verb",
+          "english": "To suggest or introduce (an idea, etc.) to (off or by) somebody, in order to gain feedback.",
+          "chinese": "把想法等提出來和別人討論，以取得回饋。"
+        },
+        {
+          "partOfSpeech": "verb",
+          "english": "(of a cheque/check) To be refused by a bank because it is drawn on insufficient funds.",
+          "chinese": "（支票）因帳戶餘額不足而遭銀行退票。"
+        }
+      ],
+      "example": {
+        "english": "The tennis ball bounced off the wall before coming to rest in the ditch.",
+        "chinese": "網球撞牆反彈後，最後停在水溝裡。"
+      }
+    },
+    "disengage": {
+      "headword": "disengage",
+      "ipa": "/ˌdɪsɪnˈɡeɪdʒ/",
+      "gloss": "脫離；鬆開",
+      "source": "llm",
+      "senses": [
+        {
+          "partOfSpeech": "verb",
+          "english": "To separate or release something from what holds or connects it, or to become separated in this way.",
+          "chinese": "使某物鬆開或與相連的東西分離；也指自行脫離。"
+        },
+        {
+          "partOfSpeech": "verb",
+          "english": "To stop participating in an activity or conflict, or to withdraw attention or involvement.",
+          "chinese": "停止參與活動或衝突，或不再投入注意力與心力。"
+        },
+        {
+          "partOfSpeech": "verb",
+          "english": "To disconnect a mechanism so that it no longer transmits power or controls something.",
+          "chinese": "使機械裝置脫開，停止傳動或控制作用。"
+        },
+        {
+          "partOfSpeech": "noun",
+          "english": "In fencing, a movement of the blade around an opponent's blade to evade a parry or change the line of attack.",
+          "chinese": "擊劍時，劍尖繞過對手劍身，以避開格擋或改變攻擊路線的動作。"
+        }
+      ],
+      "example": {
+        "english": "Disengage the clutch before changing gear.",
+        "chinese": "換檔前先踩下離合器，使傳動分離。"
+      }
+    },
+    "outscale": {
+      "headword": "outscale",
+      "ipa": "/ˌaʊtˈskeɪl/",
+      "gloss": "成長得更快；後期變得更強",
+      "source": "llm",
+      "senses": [
+        {
+          "partOfSpeech": "verb",
+          "english": "To grow or improve faster than something else as time, size, or resources increase.",
+          "chinese": "隨著時間、規模或資源增加，比其他事物成長或進步得更快。"
+        },
+        {
+          "partOfSpeech": "verb",
+          "english": "In a game, to gain strength more effectively than an opponent as the game progresses, eventually becoming stronger.",
+          "chinese": "遊戲中隨著進程推進，比對手獲得更多戰力，最終變得更強。"
+        }
+      ],
+      "example": {
+        "english": "This champion outscales most opponents in the late game.",
+        "chinese": "這個英雄到了遊戲後期，戰力會超越大多數對手。"
+      }
     }
   }
 }
