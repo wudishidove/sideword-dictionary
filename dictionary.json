@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": 1793676380547,
+  "updatedAt": 1795551462180,
   "aliases": {
     "strove": [
       "strive"
@@ -375,6 +375,19 @@
     ],
     "outscaling": [
       "outscale"
+    ],
+    "rivet": [
+      "rivet"
+    ],
+    "rivets": [
+      "rivet"
+    ],
+    "riveted": [
+      "rivet"
+    ],
+    "riveting": [
+      "rivet",
+      "riveting"
     ]
   },
   "records": {
@@ -1617,6 +1630,67 @@
         "english": "This champion outscales most opponents in the late game.",
         "chinese": "這個英雄到了遊戲後期，戰力會超越大多數對手。"
       }
+    },
+    "rivet": {
+      "headword": "rivet",
+      "ipa": null,
+      "gloss": "鉚接；吸引住",
+      "source": "dictionary",
+      "senses": [
+        {
+          "partOfSpeech": "verb",
+          "english": "To attach or fasten parts by using rivets.",
+          "chinese": "用鉚釘把零件接合或固定在一起。"
+        },
+        {
+          "partOfSpeech": "verb",
+          "english": "To install rivets.",
+          "chinese": "裝上鉚釘。"
+        },
+        {
+          "partOfSpeech": "verb",
+          "english": "To command the attention of.",
+          "chinese": "牢牢吸引住某人的注意力。"
+        },
+        {
+          "partOfSpeech": "verb",
+          "english": "To make firm or immovable.",
+          "chinese": "使牢牢固定或動彈不得。"
+        }
+      ],
+      "example": {
+        "english": "Terror riveted him to the spot.",
+        "chinese": "他嚇得僵在原地，動彈不得。"
+      }
+    },
+    "riveting": {
+      "headword": "riveting",
+      "ipa": null,
+      "gloss": "引人入勝的；鉚接",
+      "source": "dictionary",
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "english": "The act of joining with rivets.",
+          "chinese": "用鉚釘接合的作業。"
+        },
+        {
+          "partOfSpeech": "noun",
+          "english": "The act of spreading out and clinching the end, as of a rivet, by beating or pressing.",
+          "chinese": "以敲打或加壓的方式，將鉚釘等物的末端壓展，使其扣緊固定的作業。"
+        },
+        {
+          "partOfSpeech": "noun",
+          "english": "A set of rivets; rivets collectively.",
+          "chinese": "一組鉚釘；鉚釘的總稱。"
+        },
+        {
+          "partOfSpeech": "adjective",
+          "english": "Commanding the attention of spectators.",
+          "chinese": "非常吸引觀眾注意力的；引人入勝的。"
+        }
+      ],
+      "example": null
     }
   }
 }
